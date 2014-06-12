@@ -1,0 +1,110 @@
+<div class="container room-index" ng-controller="RoomController">
+    <div class="panel panel-default room" self-height="$(window).height() - 150">
+        <div class="panel-heading room-header">DreamChat</div>
+        <div class="panel-body room-content">
+            <div class="messages" self-height="$(window).height() - 310" auto-scroll-to-bottom>
+                <div class="message" ng-repeat="message in messageList">
+                    <img class="img-rounded" ng-src="{{me.avatarUrl}}" title="{{me.name}}">
+                    <span>{{me.name}}</span>
+                    <div class="well well-sm">{{message.content}}</div>
+                    <!--<time am-time-ago="message.createAt"></time>-->
+                </div>
+            </div>
+            <form class="message-creator">
+                <div class="form-group">
+                    <textarea required class="form-control message-input" ng-model="newMessage"
+                              enter-to-send-message="sendMessage()" placeholder="Enter to quick send"></textarea>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="panel panel-default user-list">
+        <div class="panel-heading user-list-header">在线用户列表</div>
+        <div class="panel-body user-list-content" self-height="$(window).height() - 221">
+            <div class="list-group">
+<!--
+                <div class="list-group-item" ng-repeat="user in userList">
+                    <img ng-src="user.avatarUrl" class="img-rounded">
+                    <span>{{user.name}}</span>
+                </div>
+-->
+                <div class="list-group-item">
+                    <img ng-src="{{me.avatarUrl}}" class="img-rounded">
+                    <span>{{me.name}}</span>
+                </div>
+                <div class="list-group-item">
+                    <img ng-src="{{me.avatarUrl}}" class="img-rounded">
+                    <span>{{me.name}}</span>
+                </div>
+                <div class="list-group-item">
+                    <img ng-src="{{me.avatarUrl}}" class="img-rounded">
+                    <span>{{me.name}}</span>
+                </div>
+                <div class="list-group-item">
+                    <img ng-src="{{me.avatarUrl}}" class="img-rounded">
+                    <span>{{me.name}}</span>
+                </div>
+                <div class="list-group-item">
+                    <img ng-src="{{me.avatarUrl}}" class="img-rounded">
+                    <span>{{me.name}}</span>
+                </div>
+                <div class="list-group-item">
+                    <img ng-src="{{me.avatarUrl}}" class="img-rounded">
+                    <span>{{me.name}}</span>
+                </div>
+                <div class="list-group-item">
+                    <img ng-src="{{me.avatarUrl}}" class="img-rounded">
+                    <span>{{me.name}}</span>
+                </div>
+                <div class="list-group-item">
+                    <img ng-src="{{me.avatarUrl}}" class="img-rounded">
+                    <span>{{me.name}}</span>
+                </div>
+                <div class="list-group-item">
+                    <img ng-src="{{me.avatarUrl}}" class="img-rounded">
+                    <span>{{me.name}}</span>
+                </div>
+                <div class="list-group-item">
+                    <img ng-src="{{me.avatarUrl}}" class="img-rounded">
+                    <span>{{me.name}}</span>
+                </div>
+                <div class="list-group-item">
+                    <img ng-src="{{me.avatarUrl}}" class="img-rounded">
+                    <span>{{me.name}}</span>
+                </div>
+                <div class="list-group-item">
+                    <img ng-src="{{me.avatarUrl}}" class="img-rounded">
+                    <span>{{me.name}}</span>
+                </div>
+                <div class="list-group-item">
+                    <img ng-src="{{me.avatarUrl}}" class="img-rounded">
+                    <span>{{me.name}}</span>
+                </div>
+                <div class="list-group-item">
+                    <img ng-src="{{me.avatarUrl}}" class="img-rounded">
+                    <span>{{me.name}}</span>
+                </div>
+                <div class="list-group-item">
+                    <img ng-src="{{me.avatarUrl}}" class="img-rounded">
+                    <span>{{me.name}}</span>
+                </div>
+                <div class="list-group-item">
+                    <img ng-src="{{me.avatarUrl}}" class="img-rounded">
+                    <span>{{me.name}}</span>
+                </div>
+                <div class="list-group-item">
+                    <img ng-src="{{me.avatarUrl}}" class="img-rounded">
+                    <span>{{me.name}}</span>
+                </div>
+                <div class="list-group-item">
+                    <img ng-src="{{me.avatarUrl}}" class="img-rounded">
+                    <span>{{me.name}}</span>
+                </div>
+                <div class="list-group-item">
+                    <img ng-src="{{me.avatarUrl}}" class="img-rounded">
+                    <span>{{me.name}}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

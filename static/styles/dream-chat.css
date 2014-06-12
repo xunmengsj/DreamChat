@@ -1,0 +1,55 @@
+.img-rounded {
+    border-radius: 4px;
+    height: 30px;
+    width: 30px;
+}
+
+.navbar .navbar-right .img-rounded {
+    border-radius: 4px;
+    height: 34px;
+    width: 34px;
+    margin-top: 9px;
+}
+
+.form-inline {
+    text-align: center;
+    margin-top: 170px;
+}
+
+.room-index {
+    display: flex;
+}
+
+.room-index .room {
+    flex: 3;
+    min-height: 220px;
+}
+.room-index .user-list{
+    flex: 1;
+    margin-left: 20px;
+    min-height: 220px;
+}
+.room-index .user-list .user-list-content{
+    overflow-y: auto;
+}
+.room-index .room .messages{
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    overflow-y: auto;
+    min-height: 70px;
+}
+.room-index .room .messages .message{
+     margin-bottom: 5px;
+}
+.room-index .room .messages .well-sm{
+    padding: 4px;
+    border-radius: 4px;
+    display: inline-block;
+    margin-bottom: 0px;
+    vertical-align: middle;
+}
+.room-index .user-list .list-group-item{
+    padding: 4px 10px;
+}

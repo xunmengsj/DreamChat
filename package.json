@@ -1,0 +1,36 @@
+{
+  "name": "DreamChat",
+  "version": "0.0.0",
+  "description": "DreamChat\r =========",
+  "main": "app.js",
+  "scripts": {
+    "test": "node app.js --dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xunmengsj/DreamChat"
+  },
+  "keywords": [
+    "node.js",
+    "angular.js",
+    "socket.io",
+    "mongodb",
+    "express"
+  ],
+  "author": "xunmengsj",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/xunmengsj/DreamChat/issues"
+  },
+  "homepage": "https://github.com/xunmengsj/DreamChat",
+  "dependencies": {
+    "express": "~4.4.1",
+    "socket.io": "~1.0.4",
+    "mongoose": "~3.8.12",
+    "async": "~0.9.0",
+    "gravatar": "~1.0.6",
+    "body-parser": "~1.3.0",
+    "cookie-parser": "~1.1.0",
+    "express-session": "~1.2.1"
+  }
+}
